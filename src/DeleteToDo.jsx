@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlineDelete } from "react-icons/ai";
 
 export default function DeleteToDo(props) {
   return (
@@ -12,7 +13,7 @@ export default function DeleteToDo(props) {
             className="btn btn-danger m-1"
             onClick={() => props.deleteToDo(props.index)}
           >
-            Delete
+            <AiOutlineDelete />
           </button>
         </div>
       </div>

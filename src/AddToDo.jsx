@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { IoMdAddCircle } from "react-icons/io";
 
 export default function AddToDo(props) {
   const [item, setItem] = useState();
@@ -7,7 +8,7 @@ export default function AddToDo(props) {
   return (
     <div className="container text-center">
       <div className="row">
-        <div className="col-6">
+        <div className="col-6 paddingTop">
           <input
             type="text"
             placeholder="input todo here"
@@ -15,7 +16,7 @@ export default function AddToDo(props) {
             onChange={(e) => setItem(e.target.value)}
           />
         </div>
-        <div className="col-4">
+        <div className="col-4 paddingTop">
           <input
             type="date"
             value={date}
@@ -34,7 +35,7 @@ export default function AddToDo(props) {
               setDate("");
             }}
           >
-            Add Todo
+            <IoMdAddCircle />
           </button>
         </div>
       </div>
