@@ -24,3 +24,7 @@ button{
   height: 50px;
   padding: 0px;
 }
+
+.paddingTop{
+  padding-top: 15px;
+}
